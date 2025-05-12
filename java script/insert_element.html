@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #box {
+            width: 250px;
+            height: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">this is a div
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+    <p class="pass"> hbcdbciudncjhdvcu jhvbckwebcjewb hjbckuweixub hbjhevxu</p>
+
+    <script>
+
+         // Add element 
+        let newBtn = document.createElement("button");
+        newBtn.innerText = "click me ";
+        console.log(newBtn);
+
+        let div = document.querySelector("div");
+        div.append(newBtn);
+
+        let heading = document.createElement("h1");
+        heading.innerHTML = "<i>hi hello how are you</i>";
+        
+        document.querySelector("body").prepend(heading);
+
+        document.querySelector(".pass").remove() ;   // remove element
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 5px;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>java script </h1>
+    <div class="box">first div</div>
+    <div class="box"> second div</div>
+    <div class="box"> third div</div>
+
+    <script>
+        let divs = document.querySelectorAll(".box");
+        divs[0].innerText = " value 1";
+        divs[1].innerText = " value 2";
+        divs[2].innerText = " value 3";
+
+    </script>
+</body>
+
+</html>
